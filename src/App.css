@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Share+Tech+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  background: #f3767c;
+}
+
+.calculator {
+  position: relative;
+  width: 400px;
+  background-color: #393939;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.637) 10px 10px 5px;
+}
+
+.row {
+  display: flex;
+}
+
+.numberBtn {
+  position: relative;
+  background: #58595b;
+  outline: none;
+  border: none;
+  width: 80px;
+  height: 70px;
+  color: rgb(235, 235, 235);
+  font-size: 18px;
+  cursor: pointer;
+  margin: 7px;
+}
+
+.numberBtn:hover {
+  background: #58595b7e;
+}
+
+.operatorBtn {
+  position: relative;
+  outline: none;
+  background: #130f10;
+  border: none;
+  width: 80px;
+  height: 70px;
+  font-size: 18px;
+  color: rgb(235, 235, 235);
+  cursor: pointer;
+  margin: 7px;
+}
+
+.operatorBtn:hover {
+  background: #130f108c;
+}
+
+.equalBtn {
+  position: absolute;
+  outline: none;
+  bottom: 10px;
+  background: #fa6d00;
+  border: none;
+  width: 80px;
+  height: 154px;
+  font-size: 18px;
+  color: rgb(235, 235, 235);
+  cursor: pointer;
+  margin: 7px;
+}
+
+.equalBtn:hover {
+  background: #ff7e1c;
+}
+
+.jumbo {
+  width: 175px;
+}
+
+.output {
+  display: flex;
+  background: #a2af77;
+  flex-direction: column;
+  align-items: flex-end;
+  min-height: 85px;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: "Share Tech Mono";
+  border-radius: 15px;
+  margin: 10px auto 10px auto;
+}
+
+#display {
+  width: 100%;
+  text-align: right;
+  color: black;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.formula {
+  width: 100%;
+  text-align: right;
+  word-wrap: break-word;
+  color: rgb(33, 44, 141);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .calculator {
+    padding: 10px;
+    width: 320px;
+  }
+  .numberBtn {
+    margin: 2px;
+    width: 70px;
+  }
+  .operatorBtn {
+    margin: 2px;
+    width: 70px;
+  }
+
+  .equalBtn {
+    width: 70px;
+    margin: 2px;
+    height: 144px;
+  }
+  .jumbo {
+    width: 144px;
+  }
+}
